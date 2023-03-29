@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for u in users -%}
+    <li>name is {{u.name}}
+    <li>the age is {{u.old}}
+    <li>and the wieght is {{u.weight}}
+{% endfor -%}
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'ex_main.html' %}
+
+{% block title %}Оглавление страницы{% endblock %}
+{% block content %}
+<!--контент из шаблона -->
+{{ super()}}
+<!--из соседнего блока title-->
+{{ self.title()}}
+<h1>Сюда вносим контент страницы</h1>
+<p> Контент..
+{% endblock content %}
